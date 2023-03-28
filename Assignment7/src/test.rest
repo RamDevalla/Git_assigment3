@@ -1,0 +1,33 @@
+// Get api to get the all data
+GET http://localhost:8080/api/student
+
+###
+// GET api to get data of a particular ID
+GET  http://localhost:8080/api/student/10
+
+// PoST api to Create a new POST or data
+###
+POST http://localhost:8080/api/student
+Content-Type: application/json 
+
+{
+    "name": "Ram",
+    "currentClass": 8,
+    "division": "B"
+}
+
+// PUT api to update an existing post / data
+###
+PUT  http://localhost:8080/api/student/8
+Content-Type: application/json
+
+{
+    "name": "RajaRam",
+    "currentClass": "9",
+    "division": "D"
+}
+
+// DELETE api to delete an existing post / data
+###
+DELETE http://localhost:8080/api/student/10
+
